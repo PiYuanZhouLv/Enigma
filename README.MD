@@ -5,8 +5,11 @@ P.S. I'm sorry for my poor English. if you have advice on translate, please on a
 This is the Python version of a machine called Enigma which was widely used in World War II.
 
 > Would you like to use Enigma?
+> 
 > Now, I provide one for you.
+> 
 > But you have to assemble it by youself.
+> 
 > So, please read the usage below carefully!
 ## How does it work?
 The structure of the Enigma is below
@@ -27,7 +30,7 @@ The structure of the Enigma is below
 
 ## Usage
 There is an example:
-```
+```python
 >>> from enigma import *
 >>> send_message("Hello word! Hello pi!你好世界，你好圆周率!", '')
 Message object and its MD5 value have been saved into file message.pickle and message.md5
@@ -90,7 +93,7 @@ if one only got private key, he/she can hardly know the origin message.)
 
 ### 2. Use `ToolsGroup`
 Here is the example:
-```
+```python
 >>> from enigma import *
 >>> e = bytetools.make_up(0, [4, 3, 1], 2)
 >>> e.set_position(102, 80, 36)
@@ -218,3 +221,5 @@ Hello world! Hello pi!你好世界，你好圆周率!
 After a very, very long example, it's clear that this way is freest but **cumbersome**.
 
 As the example here, I wouldn't like to explain this long, long codes because ~~I'm lazy~~ it's quiet easy.
+
+Security: Can't compare with others.
