@@ -4,10 +4,10 @@ P.S. I'm sorry for my poor English. if you have advice on translate, please on a
 
 This is the Python version of a machine called Enigma which was widely used in World War II.
 
-    Would you like to use Enigma?
-    Now, I provide one for you.
-    But you have to assemble it by youself.
-    So, please read the usage below carefully!
+> Would you like to use Enigma?
+> Now, I provide one for you.
+> But you have to assemble it by youself.
+> So, please read the usage below carefully!
 ## How does it work?
 The structure of the Enigma is below
 ```
