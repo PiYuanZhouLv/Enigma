@@ -30,21 +30,21 @@ The structure of the Enigma is below
 
 ## Usage
 There is an example:
-```python
+```pycon
 >>> from enigma import *
 >>> send_message("Hello word! Hello pi!你好世界，你好圆周率!", '')
-Message object and its MD5 value have been saved into file message.pickle and message.md5
-Please send this two file above to the receiver.
-================================================================================
-*Private* Information Below, please keep it a secret and send it to the receiver.
-Swap: 8
-Wheels: [9, 1, 0, 4, 6, 8, 3, 2]
-Reflect: 0
-Start position: (125, 133, 16, 210, 107, 67, 251, 223)
-Code:  (8, [9, 1, 0, 4, 6, 8, 3, 2], 0, (125, 133, 16, 210, 107, 67, 251, 223))
+# Message object and its MD5 value have been saved into file message.pickle and message.md5
+# Please send this two file above to the receiver.
+# ================================================================================
+# *Private* Information Below, please keep it a secret and send it to the receiver.
+# Swap: 8
+# Wheels: [9, 1, 0, 4, 6, 8, 3, 2]
+# Reflect: 0
+# Start position: (125, 133, 16, 210, 107, 67, 251, 223)
+# Code:  (8, [9, 1, 0, 4, 6, 8, 3, 2], 0, (125, 133, 16, 210, 107, 67, 251, 223))
 >>> receive_message('', (8, [9, 1, 0, 4, 6, 8, 3, 2], 0, (125, 133, 16, 210, 107, 67, 251, 223)))
-====================================Message=====================================
-Hello word! Hello pi!你好世界，你好圆周率!
+# ====================================Message=====================================
+# Hello word! Hello pi!你好世界，你好圆周率!
 ```
 P.S. File 'message.pickle' and 'message.md5' is also in the folder to test for you.
 Before you execute the receive_message(...), please check the MD5 in message.md5 again:
@@ -93,7 +93,7 @@ if one only got private key, he/she can hardly know the origin message.)
 
 ### 2. Use `ToolsGroup`
 Here is the example:
-```python
+```pycon
 >>> from enigma import *
 >>> e = bytetools.make_up(0, [4, 3, 1], 2)
 >>> e.set_position(102, 80, 36)
