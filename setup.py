@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='Enigma',
     version='0.1.0',
-    packages=[''],
+    packages=['.'],
     url='https://github.com/PiYuanZhouLv/Enigma',
     license='',
     author='PiYuanZhouLv',
